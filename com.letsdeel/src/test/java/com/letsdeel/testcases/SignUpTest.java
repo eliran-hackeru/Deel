@@ -101,7 +101,9 @@ public class SignUpTest extends BaseClass
 		
 		signUpPage.submit();
 		
-		Thread.sleep(1000);
+		signUpPage.assertWrongPassword();
+		
+		Thread.sleep(5000);
 		Helper.captureScreenshot(driver,testName,"14_Complete");
 	}
 }

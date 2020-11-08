@@ -38,6 +38,8 @@ public class SignUpPage {
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div/div/div/p") WebElement back;
 	
+	@FindBy(className = "input-container-error") WebElement errorMsg;
+	
 	public void selectUserType() //As a client
 	{
 		typeOfUser.get(0).click();
@@ -66,5 +68,12 @@ public class SignUpPage {
 	public void goBack()
 	{
 		back.click();
+	}
+	
+	public void assertWrongPassword()
+	{
+		System.out.println(errorMsg.getText());
+		/*Assert.assertEquals(errorMsg.getText(), "Password must match");
+		System.out.println("Assert passed");*/
 	}
 }

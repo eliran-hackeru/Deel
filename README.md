@@ -1,7 +1,7 @@
 # Deel
 QA Automation Exam
 
-There 3 test cases in this app:
+There are 3 test cases in this app:
 1) Sanity with hard coded details.
 2) Sanity with outsourced details (the details ar in an outsourced file).
 3) Negative test with mismatch password that is in an outsourced file.

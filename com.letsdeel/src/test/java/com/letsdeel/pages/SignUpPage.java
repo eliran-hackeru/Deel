@@ -1,15 +1,11 @@
 package com.letsdeel.pages;
 
-import java.io.IOException;
 import java.util.List;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-
-import com.letsdeel.utility.Helper;
 
 public class SignUpPage {
 	
@@ -72,8 +68,7 @@ public class SignUpPage {
 	
 	public void assertWrongPassword()
 	{
-		System.out.println(errorMsg.getText());
-		/*Assert.assertEquals(errorMsg.getText(), "Password must match");
-		System.out.println("Assert passed");*/
+		Assert.assertEquals(errorMsg.getText(), "Password must match");
+		System.out.println("Assert passed");
 	}
 }

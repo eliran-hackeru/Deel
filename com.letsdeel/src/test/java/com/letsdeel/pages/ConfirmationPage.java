@@ -18,9 +18,11 @@ public class ConfirmationPage
 	
 	@FindBy(className = "confirmation-signup-content") WebElement confirmationH2;
 	
-	public void asserConfirmaEmail()
+	public void asserConfirmEmail()
 	{
-		Assert.assertEquals(confirmationH2.getText(), "We’ve sent you a confirmation email");
+//		String realH2 = confirmationH2.getText();
+		
+		Assert.assertTrue(confirmationH2.getText().contains("We’ve sent you a confirmation email"));
 		System.out.println("Assert Confirm Email passed");
 	}
 

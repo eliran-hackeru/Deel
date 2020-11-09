@@ -20,8 +20,6 @@ public class ConfirmationPage
 	
 	public void asserConfirmEmail()
 	{
-//		String realH2 = confirmationH2.getText();
-		
 		Assert.assertTrue(confirmationH2.getText().contains("We’ve sent you a confirmation email"));
 		System.out.println("Assert Confirm Email passed");
 	}

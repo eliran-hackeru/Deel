@@ -18,10 +18,8 @@ public class SignUpPage {
 	
 	@FindBy (className = "mb-4") List<WebElement> typeOfUser;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[2]/div[3]/button/div") WebElement continueButton;
-	
-	@FindBy(xpath = "//span[.='Sign up using Google']") WebElement googleSignUp;// Will not be tested, since there isn't any field validation for this
-	
+	@FindBy(xpath = "//*[contains(text(), 'CONTINUE')]") WebElement continueButton;
+		
 	@FindBy(name = "name") WebElement fullName;
 	
 	@FindBy(name = "email") WebElement email;
@@ -30,9 +28,7 @@ public class SignUpPage {
 	
 	@FindBy(name = "confirmPassword") WebElement confirmPassword;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[4]/div/div/div/form/button/div") WebElement createAccount;
-	
-	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div/div/div/p") WebElement back;
+	@FindBy(xpath = "//*[contains(text(), 'CREATE YOUR DEEL ACCOUNT')]") WebElement createAccount;
 	
 	@FindBy(className = "input-container-error") WebElement errorMsg;
 	
@@ -59,11 +55,6 @@ public class SignUpPage {
 	{
 		Assert.assertEquals(driver.getTitle(), "Deel - Payroll for remote teams");
 		System.out.println("Assert Title passed");
-	}
-	
-	public void goBack()
-	{
-		back.click();
 	}
 	
 	public void assertMisMatchPasswords()

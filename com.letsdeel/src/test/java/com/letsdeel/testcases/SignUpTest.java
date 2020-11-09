@@ -27,7 +27,8 @@ public class SignUpTest extends BaseClass
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"02_BlankForm");
 		
-		signUpPage.insertDetails("Eliran Duveen", "eduveen@gmail.com", "123abc", "123abc");
+//		signUpPage.insertDetails("Eliran Duveen", "eduveen@gmail.com", "123abc", "123abc");
+		signUpPage.insertDetails("Eliran Duveen", "AutoTest"+Helper.getSaltString()+"@gmail.com", "123abc", "123abc");
 		
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"03_Details");
@@ -38,7 +39,7 @@ public class SignUpTest extends BaseClass
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"04_Complete");
 		
-		signUpPage.goBack();
+//		signUpPage.goBack();
 	}
 	
 	@Test(priority=1) //Outsourced Details
@@ -97,7 +98,6 @@ public class SignUpTest extends BaseClass
 		
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"13_Details");
-		
 		
 		signUpPage.submit();
 		

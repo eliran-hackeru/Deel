@@ -30,7 +30,9 @@ public class SignUpPage {
 	
 	@FindBy(xpath = "//*[contains(text(), 'CREATE YOUR DEEL ACCOUNT')]") WebElement createAccount;
 	
-	@FindBy(className = "input-container-error") WebElement errorMsg;
+	@FindBy(className = "input-container-error") WebElement errorMessage;
+	
+	@FindBy(xpath = "/html/body/div/div[2]/div[1]/div/div/div/p") WebElement backButton;
 	
 	public void selectUserType() //As a client
 	{
@@ -57,9 +59,20 @@ public class SignUpPage {
 		System.out.println("Assert Title passed");
 	}
 	
+	public void goBack()
+	{
+		backButton.click();
+	}
+	
 	public void assertMisMatchPasswords()
 	{
-		Assert.assertEquals(errorMsg.getText(), "Password must match");
+		Assert.assertEquals(errorMessage.getText(), "Password must match");
 		System.out.println("Assert MisMatchPasswords passed");
+	}
+	
+	public void assertInvalidEmail()
+	{
+		Assert.assertEquals(errorMessage.getText(), "Invalid email address");
+		System.out.println("Assert Invalid email address passed");
 	}
 }

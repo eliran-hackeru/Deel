@@ -112,5 +112,39 @@ public class SignUpTest extends BaseClass
 		
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"04_Complete");
+		
+		signUpPage.goBack();
+	}
+	
+	@Test(priority=3) //Outsourced Details - Negative testing: Invalid email address
+	public void InvalidEmailApp() throws InterruptedException
+	{
+		String testName = new Throwable().getStackTrace()[0].getMethodName();
+		
+		extentTest = extent.createTest(testName); //The report file is located in the test-output folder under myReport.html
+		
+		SignUpPage signUpPage = PageFactory.initElements(driver, SignUpPage.class);
+		
+		signUpPage.assertTitle();
+		
+		Thread.sleep(1000);
+		Helper.captureScreenshot(driver,testName,"01_BrowserStarted");
+		
+		signUpPage.selectUserType();
+		
+		Thread.sleep(1000);
+		Helper.captureScreenshot(driver,testName,"02_BlankForm");
+		
+		signUpPage.insertDetails(excel.getStringData("Details", 3, 0), excel.getStringData("Details", 3, 1),excel.getStringData("Details", 3, 2), excel.getStringData("Details", 3,3)); //The Excel file is located in the TestData folder under Data.xlsx
+		
+		Thread.sleep(1000);
+		Helper.captureScreenshot(driver,testName,"03_Details");
+		
+		signUpPage.submit();
+		
+		signUpPage.assertInvalidEmail();
+		
+		Thread.sleep(1000);
+		Helper.captureScreenshot(driver,testName,"04_Complete");
 	}
 }

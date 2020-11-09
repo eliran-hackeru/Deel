@@ -5,7 +5,7 @@ There are 4 test cases in this app:
 1) Sanity with hard coded details.
 2) Sanity with outsourced details that are in an outsourced file.
 3) Negative test with mismatch passwords that are in an outsourced file.
-4) Negative test with invalid email that is in an outsourced file.
+4) Negative test with an invalid email that is in an outsourced file.
 
 All the tests are located in the same class - SignUpTest.java.
 

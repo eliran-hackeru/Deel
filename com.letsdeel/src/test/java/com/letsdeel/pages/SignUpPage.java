@@ -58,7 +58,7 @@ public class SignUpPage {
 	public void assertTitle()
 	{
 		Assert.assertEquals(driver.getTitle(), "Deel - Payroll for remote teams");
-		System.out.println("Assert passed");
+		System.out.println("Assert Title passed");
 	}
 	
 	public void goBack()
@@ -66,9 +66,9 @@ public class SignUpPage {
 		back.click();
 	}
 	
-	public void assertWrongPassword()
+	public void assertMisMatchPasswords()
 	{
 		Assert.assertEquals(errorMsg.getText(), "Password must match");
-		System.out.println("Assert passed");
+		System.out.println("Assert MisMatchPasswords passed");
 	}
 }

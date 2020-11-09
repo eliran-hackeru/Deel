@@ -75,7 +75,7 @@ public class SignUpTest extends BaseClass
 	}
 	
 	@Test(priority=2) //Outsourced Details - Negative testing: passwords mismatch
-	public void NegativeFileSignUpApp() throws InterruptedException
+	public void MisMatchPasswordsApp() throws InterruptedException
 	{
 		String testName = new Throwable().getStackTrace()[0].getMethodName();
 		
@@ -101,9 +101,9 @@ public class SignUpTest extends BaseClass
 		
 		signUpPage.submit();
 		
-		signUpPage.assertWrongPassword();
+		signUpPage.assertMisMatchPasswords();
 		
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"14_Complete");
 	}
 }

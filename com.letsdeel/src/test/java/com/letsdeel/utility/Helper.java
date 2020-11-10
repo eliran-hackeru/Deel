@@ -81,6 +81,16 @@ public class Helper {
 		js.executeScript("window.scrollBy(0,5000)");
 	}
 	
+	public static String[] excelString(ExcelDataProvider excel, String sheetName, int row, int col)
+	{
+		String data[] = new String[col];
+		for (int i=0; i<4; i++)
+		{
+			data[i]=excel.getStringData(sheetName, row, i);
+		}
+		return data;
+	}
+	
 	public static String getSaltString()
 	{
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
@@ -93,14 +103,4 @@ public class Helper {
         String saltStr = salt.toString();
         return saltStr;
     }
-	
-	public static String[] excelString(ExcelDataProvider excel, String sheetName, int row, int col)
-	{
-		String data[] = new String[col];
-		for (int i=0; i<4; i++)
-		{
-			data[i]=excel.getStringData(sheetName, row, i);
-		}
-		return data;
-	}
 }

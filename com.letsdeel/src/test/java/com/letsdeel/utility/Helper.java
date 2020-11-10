@@ -84,7 +84,7 @@ public class Helper {
 	public static String[] excelString(ExcelDataProvider excel, String sheetName, int row, int col)
 	{
 		String data[] = new String[col];
-		for (int i=0; i<4; i++)
+		for (int i=0; i<col; i++)
 		{
 			data[i]=excel.getStringData(sheetName, row, i);
 		}

@@ -93,4 +93,14 @@ public class Helper {
         String saltStr = salt.toString();
         return saltStr;
     }
+	
+	public static String[] excelString(ExcelDataProvider excel, String sheetName, int row, int col)
+	{
+		String data[] = new String[col];
+		for (int i=0; i<4; i++)
+		{
+			data[i]=excel.getStringData(sheetName, row, i);
+		}
+		return data;
+	}
 }

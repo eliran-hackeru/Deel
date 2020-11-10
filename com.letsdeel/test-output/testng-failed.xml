@@ -6,7 +6,10 @@
       <class name="com.letsdeel.testcases.SignUpTest">
         <methods>
           <include name="seExtent"/>
+          <include name="MisMatchPasswordsApp"/>
+          <include name="SignUpApp"/>
           <include name="setUpSuite"/>
+          <include name="InvalidEmailApp"/>
           <include name="tearDown"/>
           <include name="FileSignUpApp"/>
           <include name="setupApplication"/>

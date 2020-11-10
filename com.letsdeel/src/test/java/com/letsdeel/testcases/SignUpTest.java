@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.letsdeel.pages.ConfirmationPage;
 import com.letsdeel.pages.SignUpPage;
+import com.letsdeel.utility.ExcelDataProvider;
 import com.letsdeel.utility.Helper;
 
 public class SignUpTest extends BaseClass
@@ -65,11 +66,13 @@ public class SignUpTest extends BaseClass
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"02_BlankForm");
 		
-		signUpPage.insertDetails(excel.getStringData("Details", 1, 0), "AutoTest"+Helper.getSaltString()+"@gmail.com",excel.getStringData("Details", 1, 2), excel.getStringData("Details", 1,3)); //The Excel file is located in the TestData folder under Data.xlsx
+		String data[] = Helper.excelString(excel, "Details", 1, 4); //The Excel file is located in the TestData folder under Data.xlsx
 		
+		signUpPage.insertDetails(data[0], "AutoTest"+Helper.getSaltString()+"@gmail.com", data[2], data[3]);
+				
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"03_Details");
-		
+	
 		signUpPage.submit();
 				
 		ConfirmationPage confirmationPage = PageFactory.initElements(driver, ConfirmationPage.class);
@@ -101,7 +104,9 @@ public class SignUpTest extends BaseClass
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"02_BlankForm");
 		
-		signUpPage.insertDetails(excel.getStringData("Details", 2, 0), excel.getStringData("Details", 2, 1),excel.getStringData("Details", 2, 2), excel.getStringData("Details", 2,3)); //The Excel file is located in the TestData folder under Data.xlsx
+		String data[] = Helper.excelString(excel, "Details", 2, 4); //The Excel file is located in the TestData folder under Data.xlsx
+		
+		signUpPage.insertDetails(data[0], data[1], data[2], data[3]);
 		
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"03_Details");
@@ -135,7 +140,9 @@ public class SignUpTest extends BaseClass
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"02_BlankForm");
 		
-		signUpPage.insertDetails(excel.getStringData("Details", 3, 0), excel.getStringData("Details", 3, 1),excel.getStringData("Details", 3, 2), excel.getStringData("Details", 3,3)); //The Excel file is located in the TestData folder under Data.xlsx
+		String data[] = Helper.excelString(excel, "Details", 3, 4); //The Excel file is located in the TestData folder under Data.xlsx
+		
+		signUpPage.insertDetails(data[0], data[1], data[2], data[3]);
 		
 		Thread.sleep(1000);
 		Helper.captureScreenshot(driver,testName,"03_Details");

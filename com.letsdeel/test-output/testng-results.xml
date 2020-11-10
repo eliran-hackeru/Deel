@@ -1,74 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-09T18:24:40 IST" name="Default suite" finished-at="2020-11-09T18:25:11 IST" duration-ms="31364">
+  <suite started-at="2020-11-10T15:58:21 IST" name="Default suite" finished-at="2020-11-10T15:58:36 IST" duration-ms="14950">
     <groups>
     </groups>
-    <test started-at="2020-11-09T18:24:40 IST" name="Default test" finished-at="2020-11-09T18:25:11 IST" duration-ms="31364">
+    <test started-at="2020-11-10T15:58:21 IST" name="Default test" finished-at="2020-11-10T15:58:36 IST" duration-ms="14950">
       <class name="com.letsdeel.testcases.SignUpTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:24:39 IST" name="setUpSuite" finished-at="2020-11-09T18:24:40 IST" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:20 IST" name="setUpSuite" finished-at="2020-11-10T15:58:21 IST" duration-ms="454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="seExtent()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:24:40 IST" name="seExtent" finished-at="2020-11-09T18:24:40 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="seExtent()[pri:0, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:21 IST" name="seExtent" finished-at="2020-11-10T15:58:21 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seExtent -->
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:24:40 IST" name="setupApplication" finished-at="2020-11-09T18:24:49 IST" duration-ms="9659" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:21 IST" name="setupApplication" finished-at="2020-11-10T15:58:30 IST" duration-ms="9173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="SignUpApp()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:24:49 IST" name="SignUpApp" finished-at="2020-11-09T18:24:57 IST" duration-ms="7745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignUpApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:24:57 IST" name="tearDownMethod" finished-at="2020-11-09T18:24:57 IST" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SignUpApp status=SUCCESS method=SignUpTest.SignUpApp()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method signature="FileSignUpApp()[pri:1, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:24:57 IST" name="FileSignUpApp" finished-at="2020-11-09T18:25:04 IST" duration-ms="6844" status="PASS">
+        <test-method signature="FileSignUpApp()[pri:1, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:30 IST" name="FileSignUpApp" finished-at="2020-11-10T15:58:35 IST" duration-ms="4781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FileSignUpApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:25:04 IST" name="tearDownMethod" finished-at="2020-11-09T18:25:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:35 IST" name="tearDownMethod" finished-at="2020-11-10T15:58:35 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FileSignUpApp status=SUCCESS method=SignUpTest.FileSignUpApp()[pri:1, instance:com.letsdeel.testcases.SignUpTest@45b9a632] output={null}]]]>
+                <![CDATA[[TestResult name=FileSignUpApp status=SUCCESS method=SignUpTest.FileSignUpApp()[pri:1, instance:com.letsdeel.testcases.SignUpTest@18ce0030] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method signature="MisMatchPasswordsApp()[pri:2, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:25:04 IST" name="MisMatchPasswordsApp" finished-at="2020-11-09T18:25:10 IST" duration-ms="6057" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MisMatchPasswordsApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:25:10 IST" name="tearDownMethod" finished-at="2020-11-09T18:25:10 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MisMatchPasswordsApp status=SUCCESS method=SignUpTest.MisMatchPasswordsApp()[pri:2, instance:com.letsdeel.testcases.SignUpTest@45b9a632] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:25:10 IST" name="tearDown" finished-at="2020-11-09T18:25:11 IST" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:35 IST" name="tearDown" finished-at="2020-11-10T15:58:35 IST" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.letsdeel.testcases.SignUpTest@45b9a632]" started-at="2020-11-09T18:25:11 IST" name="endReport" finished-at="2020-11-09T18:25:11 IST" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.letsdeel.testcases.SignUpTest@18ce0030]" started-at="2020-11-10T15:58:35 IST" name="endReport" finished-at="2020-11-10T15:58:36 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
